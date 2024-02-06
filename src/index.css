@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+  background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc)
+}
+.header{
+  background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc)
+
+}
+@keyframes waveAnimation1 {
+  150% {
+    transform: translateY(25px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes waveAnimation2 {
+  0% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes waveAnimation3 {
+  0% {
+    transform: translateY(0);
+  }
+  120% {
+    transform: translateY(75px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+
+.wave-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px; 
+  background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc);
+}
+
+.wave1 {
+  animation: waveAnimation1 6s infinite;
+}
+
+.wave2 {
+  animation: waveAnimation2 5s infinite;
+}
+
+.wave3 {
+  animation: waveAnimation3 4s infinite;
+}
+
+.content {
+  z-index: 2; /* Ensure content is above the waves */
+  padding: 20px;
+}
