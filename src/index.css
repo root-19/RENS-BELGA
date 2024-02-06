@@ -10,13 +10,13 @@
 
 }
 @keyframes waveAnimation1 {
-  150% {
-    transform: translateY(25px);
-  }
   0% {
     transform: translateY(0);
   }
-  0% {
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
     transform: translateY(0);
   }
 }
@@ -25,11 +25,11 @@
   0% {
     transform: translateY(0);
   }
-  0% {
-    transform: translateY(0);
+  50% {
+    transform: translateY(50px);
   }
   100% {
-    transform: translateY(50px);
+    transform: translateY(0);
   }
 }
 
@@ -37,14 +37,13 @@
   0% {
     transform: translateY(0);
   }
-  120% {
+  50% {
     transform: translateY(75px);
   }
-  0% {
+  100% {
     transform: translateY(0);
   }
 }
-
 .wave-container {
   position: relative;
   height: 100vh;
