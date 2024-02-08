@@ -40,7 +40,7 @@ const Projects = () =>{
           />
           <div className="p-4">
             <h4 className="text-xl font-bold mb-2">
-            <a href="https://expense-tracker-fawn-eight.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Expnses tracker</a>
+            <a href="https://expense-tracker-fawn-eight.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Expenses tracker</a>
             </h4>
             <p className="text-gray-700">I built an Expenses Tracker using React.js and Tailwind CSS with DaisyUI. I built this because of my experimental teacher.
             </p>
@@ -76,7 +76,7 @@ const Projects = () =>{
               <a href="https://recipe-tau-taupe.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Recipe List</a>
             </h4>
             <p className="text-gray-700">
-             Recipe list I create using react.js and tailwind this my project to enchance my knowledge i create this to practice how to handle React query
+             I created a Recipe List using React.js and Tailwind CSS. This is my project to enhance my knowledge. I created this to practice how to handle React queries.
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Projects = () =>{
               <a href="https://cat-chat-six.vercel.app/" className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Cat Chat</a>
             </h4>
             <p className="text-gray-700">
-             Cat chat is a chat application using react.js and firebase when I builed have a lot knowledge having I build.
+             Cat Chat incorporates Google account authentication for user login, providing a convenient and secure way for users to access the platform. By integrating Google account authentication, users can seamlessly log in using their existing Google credentials, enhancing the user experience and ensuring authentication security.
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ const Projects = () =>{
               <a href="https://videocall-eight.vercel.app/" className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">VideoCall</a>
             </h4>
             <p className="text-gray-700">
-             video call is one on one Videocall using html,css and javascirpt 
+             Video Call is a one-on-one video call application built using HTML, CSS, and JavaScript. I developed this project to improve my skills in web development and to provide a platform for seamless video communication.
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ const Projects = () =>{
               <a href="https://e-book-omega.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Movie list</a>
             </h4>
             <p className="text-gray-700">
-             Movie lis is create using html css and js this movie is trailer movies but somethis is full video
+             The Movie List project is built with HTML, CSS, and JavaScript, featuring a collection of movie trailers and occasionally full-length films. This application aims to provide users with a curated selection of movie trailers and full videos for entertainment purposes. Developed to sharpen my front-end development skills, this project showcases my ability to create visually appealing and interactive web applications.
             </p>
           </div>
         </div>
@@ -140,7 +140,7 @@ const Projects = () =>{
               <a href="https://tourtravel-two.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Travel tour</a>
             </h4>
             <p className="text-gray-700">
-             travel tour is webpage i create to my clinent using react.js and tailwind
+The Travel Tour webpage is a project I created for my client using React.js and Tailwind CSS. This website is designed to showcase various travel destinations and tour packages offered by my client's business. By utilizing React.js and Tailwind CSS, I aimed to deliver a modern and responsive user experience while demonstrating my expertise in front-end development to meet my client's needs effectively.
             </p>
           </div>
         </div>
