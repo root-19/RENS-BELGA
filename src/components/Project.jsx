@@ -42,8 +42,7 @@ const Projects = () =>{
             <h4 className="text-xl font-bold mb-2">
             <a href="https://expense-tracker-fawn-eight.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Expnses tracker</a>
             </h4>
-            <p className="text-gray-700">
-             i builed EXpenses tracker  using react.js and tailwind with daisyUi i builed this beacuse of my expoerwment teacher
+            <p className="text-gray-700">I built an Expenses Tracker using React.js and Tailwind CSS with DaisyUI. I built this because of my experimental teacher.
             </p>
           </div>
         </div>
