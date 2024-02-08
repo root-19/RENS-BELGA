@@ -27,9 +27,7 @@ const Projects = () =>{
             <h4 className="text-xl font-bold mb-2">
               <a href="https://maria-ai-two.vercel.app/" className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text" >Maria Ai</a>
             </h4>
-            <p className="text-gray-700">
-             I created Maria Ai using react.js,tailwind,daisyUi and node.js.
-            </p>
+            <p className="text-gray-700">I created Maria Ai using React.js, Tailwind CSS, DaisyUI, and Node.js. This AI has its own perspective; for instance, if you talk, the response is tailored to what you said. </p>
           </div>
         </div>
 
