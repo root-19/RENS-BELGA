@@ -81,3 +81,20 @@ html {
   z-index: 2; /* Ensure content is above the waves */
   padding: 20px;
 }
+.content {
+  z-index: 2; 
+  padding: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
