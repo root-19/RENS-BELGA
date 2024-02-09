@@ -1,5 +1,8 @@
 import { useState } from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-scroll';
+=======
+>>>>>>> 2949d795d1d442ebc0d5c230d75ffcf7548a1c81
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
@@ -33,4 +36,7 @@ function App() {
 }
 
 export default App;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2949d795d1d442ebc0d5c230d75ffcf7548a1c81

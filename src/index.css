@@ -7,6 +7,7 @@ html {
 }
 
 
+
 .nav {
   background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc)
 }
@@ -80,6 +81,7 @@ html {
   z-index: 2; 
   padding: 20px;
 }
+
 
 @keyframes slide {
   0% {
