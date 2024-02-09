@@ -9,13 +9,46 @@ import Movie from "../assets/Movie.png";
 import Travel from "../assets/travel.png";
 const Projects = () =>{
     return(
-        <div>
-        <p className="text-2xl font-bold underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text mt-4">
-     Projects
-       
-      </p>
-      <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl">
+      <div>
+      <h2 className="text-2xl font-bold underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">
+          Achievements
+      </h2>
+
+
+      <div className="relative">
+          <div className="absolute top-0 left-0 w-full overflow-hidden bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-700">
+              <div className="flex animate-slide items-center">
+                  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg" target="_blank" rel="noopener noreferrer">
+                      <img
+                          src="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg"
+                          alt="Image 1"
+                          className="h-auto w-auto max-w-full max-h-40 mr-10 "
+                      />
+                  </a>
+                  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg" target="_blank" rel="noopener noreferrer">
+                      <img
+                          src="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg"
+                          alt="Image 1"
+                          className="h-auto w-auto max-w-full max-h-40 mr-10 "
+                      />
+                  </a>
+                  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg" target="_blank" rel="noopener noreferrer">
+                      <img
+                          src="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg"
+                          alt="Image 1"
+                          className="h-auto w-auto max-w-full max-h-40 mr-10"
+                      />
+                  </a>
+              </div>
+          </div>
+  
+    
+          <p className="text-2xl md:text-3xl lg:text-4xl font-bold pt-20 md:pt-30 lg:pt-40 underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text mt-4">
+           Projects
+          </p>
+
+      <div className="flex justify-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl pt-5">
         {/* Blog Post 1 */}
         <div className="border rounded overflow-hidden">
           <img
@@ -148,6 +181,7 @@ const Projects = () =>{
           </div>
         </div>
       </div>
+    </div>
     </div>
 
         </div>
