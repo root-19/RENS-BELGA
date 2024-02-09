@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .nav {
   background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc)
 }
