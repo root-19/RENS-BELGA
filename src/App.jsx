@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-scroll';
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
