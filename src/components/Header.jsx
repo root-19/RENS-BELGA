@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="container mx-auto flex items-center justify-between">
         <div>
           <a href="#" className="text-white text-xl font-bold">
-            Wasie
+          <span>&lt;Wasie /&gt;</span>
           </a>
         </div>
         <div className="hidden md:flex space-x-4">

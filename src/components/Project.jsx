@@ -160,7 +160,7 @@ const Projects = () =>{
               <a href="https://e-book-omega.vercel.app/"  className="bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Movie list</a>
             </h4>
             <p className="text-gray-700">
-             Movie lis is create using html css and js this movie is trailer movies but somethis is full video
+             Movie list is create using html css and js this movie is trailer movies but somethis is full video
             </p>
           </div>
         </div>
