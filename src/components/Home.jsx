@@ -14,9 +14,8 @@ const Home = () => {
 
 
           <div className="flex items-center mt-4">
-<a href="file:///path-to-your-cv.pdf" download target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r text-transparent from-blue-500 via-cyan-400 to-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer mt-4 sm:w-auto w-full truncate">
-  Download CV
-</a>
+<a href="file:///path-to-your-cv.pdf" download target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r text-transparent from-blue-500 via-cyan-400 to-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer mt-4 sm:w-auto w-full truncate">
+  Download CV</a>
 
 
           </div>
