@@ -4,7 +4,7 @@ import Cat from "../assets/Cat.png";
 import Video from "../assets/Video.png";
 import Movie from "../assets/Movie.png";
 
-import Vote1 from "../assets/Vote1.png";
+import Vote from "../assets/Vote.png";
 import Auto from "../assets/Auto.png";
 import Record from "../assets/Record.png";
 const Projects = () =>{
@@ -106,7 +106,7 @@ const Projects = () =>{
     <div className="border rounded overflow-hidden">
       <a href="" target="_blank" rel="noopener noreferrer">
         <img
-          src={Vote1}
+          src={Vote}
           alt="Blog Post 2"
           className="w-full h-auto object-cover cursor-pointer"
         />
