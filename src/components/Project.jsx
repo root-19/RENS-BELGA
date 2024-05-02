@@ -1,4 +1,4 @@
-
+hi
 import Maria from "../assets/Maria.png";
 import Cat from "../assets/Cat.png";
 import Video from "../assets/Video.png";
@@ -43,9 +43,8 @@ const Projects = () =>{
           </div>
   
     
-          <p className="ml-6text-2xl md:text-3xl ml-6  lg:text-4xl font-bold pt-20 md:pt-30 lg:pt-40 text-slate-950 bg-clip-text mt-4">
-           Projects
-          </p>
+                <h2 className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
+Project</h2>
 <div className="flex justify-center">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl pt-5">
     {/* Blog Post 1 */}
