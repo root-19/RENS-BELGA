@@ -22,7 +22,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold hover:text-blue-400 hover:underline cursor-pointer"
+            className="text-white font-bold cursor-pointer"
           >
             Home
           </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold hover:text-blue-400 hover:underline cursor-pointer"
+            className="text-white font-bold  cursor-pointer"
           >
             About Me
           </Link>
@@ -40,11 +40,12 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold hover:text-blue-400 hover:underline cursor-pointer"
+            className="text-white font-bold cursor-pointer"
           >
             Projects
+         
           </Link>
-          <Link
+          {/* <Link
             to="contact"
             spy={true}
             smooth={true}
@@ -52,7 +53,7 @@ const Header = () => {
             className="text-white font-bold hover:text-blue-400 hover:underline cursor-pointer"
           >
             Contact
-          </Link>
+          </Link>  */}
         </div>
 
         <div className="md:hidden">
@@ -78,7 +79,7 @@ const Header = () => {
           </button>
           {/* Show the menu if it's open */}
           {isMenuOpen && (
-            <div className="header absolute top-17 right-0 bg-blue-500 text-center font-bold hover:text-underline text-2xl p-9 py-10 px-10 cursor-pointer h-screen w-full flex flex-col justify-center">
+            <div className="header absolute top-17 right-0 text-center font-bold hover:text-underline text-2xl p-9 py-10 px-10 cursor-pointer h-screen w-full flex flex-col justify-center">
               <Link
                 to="home"
                 spy={true}
@@ -109,7 +110,7 @@ const Header = () => {
               >
                 Projects
               </Link>
-              <Link
+              {/* <Link
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -118,7 +119,7 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 Contact
-              </Link>
+              </Link> */}
             </div>
           )}
         </div>

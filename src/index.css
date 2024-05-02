@@ -9,7 +9,7 @@ html {
 
 
 .nav {
-  background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc)
+  background: linear-gradient(90deg,#020617,#020617,#020617)
 }
 .header{
   background: linear-gradient(90deg, #3396e7, #12c2e9, #106efc)
@@ -84,7 +84,7 @@ html {
   left: 0;
   width: 100%;
   height: 250px;
-  background: linear-gradient(90deg, rgba(51, 150, 231, 0.7), rgba(18, 194, 233, 0.7), rgba(16, 110, 252, 0.7)); /* Adjusted opacity */
+  background: linear-gradient(90deg, #111827, #09090b, #020617); /* Adjusted opacity */
 }
 
 .wave1 {

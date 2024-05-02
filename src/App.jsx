@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Project";
@@ -24,9 +24,9 @@ function App() {
       <div id="projects">
         <Projects />
       </div>
-      <div id="contact">
+      {/* <div id="contact">
         <Contact />
-      </div>
+      </div> */}
     </>
   );
 }

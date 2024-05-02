@@ -45,7 +45,11 @@ const Contact = () => {
        
       </p>
       </div>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+        <div className="flex items-center justify-center">
+      <a href="mailto:wasieacuna@email.com" className="bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded">Send Email</a>
+    
+    </div>
+      {/* <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
   <div className="mb-4">
     <label htmlFor="name" className="block mb-2">Name:</label>
     <input
@@ -86,7 +90,7 @@ const Contact = () => {
     ></textarea>
   </div>
   <button type="submit" className="block mx-auto bg-sky-400 text-2xl px-4 py-2 rounded flex items-center bg-gradient-to-r text-transparent from-blue-500 via-cyan-400 to-blue-700 bg-clip-text hover:from-blue-600 hover:via-cyan-500 hover:to-blue-800">Send Message</button>
-</form>
+</form> */}
 
     </div>
   );

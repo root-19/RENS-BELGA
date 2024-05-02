@@ -5,7 +5,7 @@ const AboutMe = () => {
    
 
       <div className="lg:w-3/2 p-4">
-        <p className="text-2xl font-bold underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text mt-4">
+        <p className="text-2xl font-bold  p-2 text-slate-950 bg-clip-text mt-4">
           About Me
          
         </p>
@@ -26,7 +26,7 @@ const AboutMe = () => {
 
         <div className="flex flex-col mt-4 lg:flex-row ">
   <div className="lg:w-1/2">
-    <h2 className="text-2xl font-bold underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">
+    <h2 className="text-2xl font-bold text-slate-950 p-2  bg-clip-text">
       Experience
     </h2>
     <div className="ml-6">
@@ -37,21 +37,21 @@ Using modern tools and frameworks, I've tackled challenges in creating dynamic a
   </div>
 
   <div className="lg:w-1/2 mt-4 lg:mt-0 lg:ml-6">
-    <h2 className="text-2xl font-bold underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">
+    <h2 className="text-2xl font-bold  p-2 text-slate-950 bg-clip-text">
       Education
     </h2>
     
     <div className="ml-6">
       <div className="mb-4">
-        <h2 className="text-lg font-semibold bg-gradient-to-r text-transparent from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">Elementary</h2>
+        <h2 className="text-lg font-semibold text-slate-950 bg-clip-text">Elementary</h2>bg-gradient-to-r text-transparent from-blue-500 via-cyan-
         <p>Studied grades 1-6 at Rizza Elementary School</p>
       </div>
       <div className="mb-4">
-        <h2 className="text-lg font-semibold bg-gradient-to-r text-transparent from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">High School</h2>
+        <h2 className="text-lg font-semibold text-slate-950 bg-clip-text">High School</h2>
         <p>Studied grades 7-10 at Rizza National High School</p>
       </div>
        <div className="mb-4">
-        <h2 className="text-lg font-semibold bg-gradient-to-r text-transparent from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">High School</h2>
+        <h2 className="text-lg font-semibold tex-slate-950 bg-clip-text">High School</h2>
         <p>Studied senior high at  Gateways Institute of Science and Technology</p>
       </div>
     </div>
@@ -61,7 +61,7 @@ Using modern tools and frameworks, I've tackled challenges in creating dynamic a
 
       </div>
       <div>
-      <h2 className="text-2xl font-bold underline bg-gradient-to-r text-transparent p-2 from-blue-500 via-cyan-400 to-blue-700 bg-clip-text">
+      <h2 className="text-2xl font-bold text-slate-950 p-2 ml-6 bg-clip-text">
       Technologies
     </h2>
     <div className="flex flex-wrap justify-center gap-4">
