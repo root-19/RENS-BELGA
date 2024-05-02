@@ -3,7 +3,7 @@ import Maria from "../assets/Maria.png";
 import Cat from "../assets/Cat.png";
 import Video from "../assets/Video.png";
 import Movie from "../assets/Movie.png";
-import Quiz from "../assets/Quiz.png";
+
 import Vote1 from "../assets/Vote1.png";
 import Auto from "../assets/Auto.png";
 import Record from "../assets/Record.png";
