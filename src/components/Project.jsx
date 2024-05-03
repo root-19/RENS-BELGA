@@ -42,6 +42,14 @@ const Projects = () =>{
                   </a>
               </div>
           </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+
   
     
                 <p className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
