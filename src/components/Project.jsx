@@ -9,13 +9,13 @@ import Auto from "../assets/Auto.png";
 import Record from "../assets/Record.png";
 const Projects = () =>{
     return(
+      
       <div>
       <h2 className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
           Achievements
       </h2>
-          <br></br>
 
-
+<br></br>
       <div className="relative">
           <div className="absolute top-0 left-0 w-full overflow-hidden bg-slate-950">
               <div className="flex animate-slide items-center">
@@ -44,7 +44,7 @@ const Projects = () =>{
           </div>
   
     
-                <p className=" text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
+                <p className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
 Project</p>
 <div className="flex justify-center">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl pt-5">
@@ -189,3 +189,4 @@ Project</p>
     );
 };
 export default Projects;
+
