@@ -1,4 +1,4 @@
-hi
+
 import Maria from "../assets/Maria.png";
 import Cat from "../assets/Cat.png";
 import Video from "../assets/Video.png";
