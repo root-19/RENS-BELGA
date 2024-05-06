@@ -43,7 +43,7 @@ Using modern tools and frameworks, I've tackled challenges in creating dynamic a
     
     <div className="ml-6">
       <div className="mb-4">
-        <h2 className="text-lg font-semibold text-slate-950 bg-clip-text">Elementary</h2>bg-gradient-to-r text-transparent from-blue-500 via-cyan-
+        <h2 className="text-lg font-semibold text-slate-950 bg-clip-text">Elementary</h2>
         <p>Studied grades 1-6 at Rizza Elementary School</p>
       </div>
       <div className="mb-4">
