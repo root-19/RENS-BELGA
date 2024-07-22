@@ -9,11 +9,11 @@ const Header = () => {
   };
 
   return (
-    <header className="nav p-4 fixed w-full top-0 z-10">
+    <header className="nav p-4 fixed w-full top-0 z-10 bg-gray-800">
       <nav className="container mx-auto flex items-center justify-between">
         <div>
           <a href="#" className="text-white text-xl font-bold">
-          <span>&lt;Wasie /&gt;</span>
+            <span>&lt;Wasie /&gt;</span>
           </a>
         </div>
         <div className="hidden md:flex space-x-4">
@@ -22,7 +22,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold cursor-pointer"
+            className="text-white font-bold cursor-pointer hover:underline"
           >
             Home
           </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold  cursor-pointer"
+            className="text-white font-bold cursor-pointer hover:underline"
           >
             About Me
           </Link>
@@ -40,20 +40,19 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold cursor-pointer"
+            className="text-white font-bold cursor-pointer hover:underline"
           >
             Projects
-         
           </Link>
           {/* <Link
             to="contact"
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold hover:text-blue-400 hover:underline cursor-pointer"
+            className="text-white font-bold cursor-pointer hover:underline"
           >
             Contact
-          </Link>  */}
+          </Link> */}
         </div>
 
         <div className="md:hidden">
@@ -79,13 +78,13 @@ const Header = () => {
           </button>
           {/* Show the menu if it's open */}
           {isMenuOpen && (
-            <div className="header absolute top-17 right-0 text-center font-bold hover:text-underline text-2xl p-9 py-10 px-10 cursor-pointer h-screen w-full flex flex-col justify-center">
+            <div className="header absolute top-17 right-0 text-center font-bold hover:text-underline text-2xl p-9 py-10 px-10 cursor-pointer h-screen w-full flex flex-col justify-center bg-gray-800">
               <Link
                 to="home"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer"
+                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
                 onClick={toggleMenu}
               >
                 Home
@@ -95,7 +94,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer"
+                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
                 onClick={toggleMenu}
               >
                 About Me
@@ -105,7 +104,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer"
+                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
                 onClick={toggleMenu}
               >
                 Projects
@@ -115,7 +114,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl  cursor-pointer"
+                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
                 onClick={toggleMenu}
               >
                 Contact
@@ -129,5 +128,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
