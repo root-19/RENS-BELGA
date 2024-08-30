@@ -17,7 +17,7 @@ const AboutMe = () => {
           />
           <div className="text-left">
             <p className="mb-2">
-              My name is Rens Belga Acuña, and I'm a 17-year-old tech enthusiast. I love developing to help and contribute to the world of Full Stack Web Development. As a developer, I find joy in creating solutions and exploring new ideas every day. I believe that being a developer is not just a job; it's a passion for making a positive impact through technology.
+              My name is Rens Belga Acuña, and I'm a tech enthusiast. I love developing to help and contribute to the world of Full Stack Web Development. As a developer, I find joy in creating solutions and exploring new ideas every day. I believe that being a developer is not just a job; it's a passion for making a positive impact through technology.
             </p>
           </div>
         </div>
