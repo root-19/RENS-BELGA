@@ -51,7 +51,7 @@ Using modern tools and frameworks, I've tackled challenges in creating dynamic a
         <p>Studied grades 7-10 at Rizza National High School</p>
       </div>
        <div className="mb-4">
-        <h2 className="text-lg font-semibold tex-slate-950 bg-clip-text">High School</h2>
+        <h2 className="text-lg font-semibold tex-slate-950 bg-clip-text">Senior High School</h2>
         <p>Studied senior high at  Gateways Institute of Science and Technology</p>
       </div>
     </div>
