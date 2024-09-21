@@ -14,7 +14,7 @@ const Projects = () =>{
     return(
       
       <div>
-      <h2 className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
+{/*       <h2 className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
           Achievements
       </h2>
 
@@ -45,7 +45,7 @@ const Projects = () =>{
                   </a>
               </div>
           </div>
-          
+           */}
           <br></br>
           <br></br>
           <br></br>
