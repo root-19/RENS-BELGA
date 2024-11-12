@@ -10,52 +10,11 @@ import Record from "../assets/Record.png";
 import Inventory from "../assets/Inventory.jpeg";
 import Dental from "../assets/Dental.png";
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-const Projects = () =>{
-    return(
+const Projects = () =>
+<>
       
       <div>
-{/*       <h2 className="text-2xl font-bold ml-6   text-slate-950 bg-clip-text">
-          Achievements
-      </h2>
-
-<br></br>
-      <div className="relative">
-          <div className="absolute top-0 left-0 w-full overflow-hidden bg-slate-950">
-              <div className="flex animate-slide items-center">
-                  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg" target="_blank" rel="noopener noreferrer">
-                      <img
-                          src="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg"
-                          alt="Image 1"
-                          className="h-auto w-auto max-w-full max-h-40 mr-10 "
-                      />
-                  </a>
-                  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg" target="_blank" rel="noopener noreferrer">
-                      <img
-                          src="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg"
-                          alt="Image 1"
-                          className="h-auto w-auto max-w-full max-h-40 mr-10 "
-                      />
-                  </a>
-                  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg" target="_blank" rel="noopener noreferrer">
-                      <img
-                          src="https://udemy-certificate.s3.amazonaws.com/image/UC-3e9e264c-cb78-477e-bdb0-712ea3e84ab4.jpg"
-                          alt="Image 1"
-                          className="h-auto w-auto max-w-full max-h-40 mr-10"
-                      />
-                  </a>
-              </div>
-          </div>
-           */}
-{/*           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br> */}
-
-  
-    
-<p className="text-2xl font-bold mb-10   text-slate-950 bg-clip-text ml-5">
+<p className="text-2xl font-bold mb-10 text-indigo-500 bg-clip-text ml-5">
  <br></br>
 Project</p>
 <div className="flex justify-center">
@@ -363,9 +322,6 @@ The Dental Clinic Appointment Management System is an innovative solution design
         </div>
       </div>
     </div>
-    </div>
-
-    );
-};
+    </>
 export default Projects;
 

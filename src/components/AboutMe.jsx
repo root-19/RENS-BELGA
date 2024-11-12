@@ -5,7 +5,7 @@ const AboutMe = () => {
    
 
       <div className="lg:w-3/2 p-4">
-        <p className="text-2xl font-bold  p-2 text-slate-950 bg-clip-text mt-4">
+        <p className="text-2xl font-bold  p-2 text-indigo-500 bg-clip-text mt-4">
           About Me
          
         </p>
@@ -17,7 +17,13 @@ const AboutMe = () => {
           />
           <div className="text-left">
             <p className="mb-2">
-              My name is Rens Belga Acuña, and I'm a tech enthusiast. I love developing to help and contribute to the world of Full Stack Web Development. As a developer, I find joy in creating solutions and exploring new ideas every day. I believe that being a developer is not just a job; it's a passion for making a positive impact through technology.
+            My name is <span className="text-indigo-500">Rens Belga Acuña</span>, a passionate tech enthusiast and dedicated Full Stack Web Developer. I thrive in the world of development, where every project brings an opportunity to innovate, solve problems, and contribute to a digital landscape that continuously evolves. I believe that technology is a powerful tool for positive change, and I’m driven by the idea of building applications that make a meaningful impact on users and communities alike.
+
+With a deep appreciation for both the creative and logical aspects of coding, I enjoy tackling complex challenges and refining solutions to deliver seamless user experiences. Whether working on the front end to craft intuitive interfaces or diving into back-end development to ensure robust functionality, I’m committed to building applications that are not only functional but also user-centric and scalable.
+
+My journey as a developer is guided by curiosity, continuous learning, and collaboration. Every new tool, language, or framework I explore expands my ability to bring ideas to life and contributes to my growth in a field that never stops evolving. Being a developer is more than a career to me; it’s a fulfilling path where I can blend creativity with technical expertise, make lasting connections, and contribute to an ever-changing technological world.
+
+I'm excited to keep pushing the boundaries of what's possible in web development and to continue making a difference through technology, one line of code at a time.
             </p>
           </div>
         </div>
@@ -26,7 +32,7 @@ const AboutMe = () => {
 
         <div className="flex flex-col mt-4 lg:flex-row ">
   <div className="lg:w-1/2">
-    <h2 className="text-2xl font-bold text-slate-950 p-2  bg-clip-text">
+    <h2 className="text-2xl font-bold text-indigo-500 p-2  bg-clip-text">
       Experience
     </h2>
     <div className="ml-6">
@@ -37,7 +43,7 @@ Using modern tools and frameworks, I've tackled challenges in creating dynamic a
   </div>
 
   <div className="lg:w-1/2 mt-4 lg:mt-0 lg:ml-6">
-    <h2 className="text-2xl font-bold  p-2 text-slate-950 bg-clip-text">
+    <h2 className="text-2xl font-bold  p-2 text-indigo-500 bg-clip-text">
       Education
     </h2>
     
@@ -61,7 +67,7 @@ Using modern tools and frameworks, I've tackled challenges in creating dynamic a
 
       </div>
       <div>
-      <h2 className="text-2xl font-bold text-slate-950 p-2 ml-6 bg-clip-text">
+      <h2 className="text-2xl font-bold text-indigo-500 p-2 ml-6 bg-clip-text">
       Technologies
     </h2>
     <div className="flex flex-wrap justify-center gap-4">

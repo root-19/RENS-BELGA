@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="container mx-auto flex items-center justify-between">
         <div>
           <a href="#" className="text-white text-xl font-bold">
-            <span>&lt;Wasie /&gt;</span>
+            <span className='text-indigo-500 '>&lt;Wasie /&gt;</span>
           </a>
         </div>
         <div className="hidden md:flex space-x-4">
@@ -22,7 +22,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold cursor-pointer hover:underline"
+            className="text-indigo-500 font-bold cursor-pointer "
           >
             Home
           </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold cursor-pointer hover:underline"
+            className="text-indigo-500 font-bold cursor-pointer"
           >
             About Me
           </Link>
@@ -40,7 +40,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-white font-bold cursor-pointer hover:underline"
+            className="text-indigo-500 font-bold cursor-pointer "
           >
             Projects
           </Link>
@@ -84,7 +84,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
+                className="text-indigo-500 block mb-2 text-2xl cursor-pointer "
                 onClick={toggleMenu}
               >
                 Home
@@ -94,7 +94,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
+                className="text-indigo-500  block mb-2 text-2xl cursor-pointer "
                 onClick={toggleMenu}
               >
                 About Me
@@ -104,7 +104,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
+                className="text-indigo-500 block mb-2 text-2xl cursor-pointer "
                 onClick={toggleMenu}
               >
                 Projects
