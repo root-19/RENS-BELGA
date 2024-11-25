@@ -9,6 +9,9 @@ import Auto from "../assets/Auto.png";
 import Record from "../assets/Record.png";
 import Inventory from "../assets/Inventory.jpeg";
 import Dental from "../assets/Dental.png";
+import pineapple from "../assets/pineapple.jpg";
+import capstone from "../assets/capstone12.png";
+import ecommer from "../assets/ecomer-2.png";
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () =>
 <>
@@ -20,6 +23,36 @@ Project</p>
 <div className="flex justify-center">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl pt-5">
     {/* Blog Post 1 */}
+    <div className="border rounded overflow-hidden">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img
+          src={ecommer}
+          alt="Blog Post 1"
+          className="w-full h-auto object-cover cursor-pointer"
+        />
+      </a>
+      <div className="p-4">
+        <h4 className="text-xl font-bold mb-2">
+          <a href="https://maria-ai-two.vercel.app/" className="text-slate-950 bg-clip-text">hpperformanceexhaust Ecommer System</a>
+        </h4>
+        <p className="text-gray-700">
+        The HP Performance Exhaust E-commerce System is a capstone project designed to provide an efficient and user-friendly platform for managing and selling performance exhaust products. Built using PHP, Bootstrap, MySQLi, and AI, the system offers seamless functionality for both clients and administrators, ensuring a smooth shopping experience.
+
+This e-commerce system is tailored to meet client needs, featuring a robust backend for product management, order tracking, and customer support. AI capabilities enhance the user experience by personalizing recommendations and streamlining processes without relying on third-party APIs. The system's responsive design, powered by Bootstrap, ensures accessibility across devices, making it a comprehensive solution for modern e-commerce requirements.
+ </p>
+  <div className="flex items-center mt-4 space-x-6">
+          <a href="" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+            <FaGithub size={24} />
+              {/* <span className="hidden md:inline">GitHub</span> */}
+          </a>
+          <a href="https://maria-ai-two.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+            <FaExternalLinkAlt size={24} />
+            {/* <span className="hidden md:inline">View</span> */}
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div className="border rounded overflow-hidden">
       <a href="" target="_blank" rel="noopener noreferrer">
         <img
@@ -47,6 +80,36 @@ The Dental Clinic Appointment Management System is an innovative solution design
         </div>
       </div>
     </div>
+    <div className="border rounded overflow-hidden">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img
+          src={capstone}
+          alt="Blog Post 1"
+          className="w-full h-auto object-cover cursor-pointer"
+        />
+      </a>
+      <div className="p-4">
+        <h4 className="text-xl font-bold mb-2">
+          <a href="https://maria-ai-two.vercel.app/" className="text-slate-950 bg-clip-text">Attendance monitoring System</a>
+        </h4>
+        <p className="text-gray-700">
+        My capstone project during Grade 12 is an attendance monitoring system that utilizes QR codes for efficient and accurate tracking of student attendance. The system integrates PHP and MySQL for backend functionality, including user authentication, attendance data storage, and processing. Additionally, it incorporates email notifications to inform students and parents about attendance updates in real time.
+
+The front-end design leverages Tailwind CSS to create a modern and responsive user interface, ensuring usability across various devices. This combination of technologies enables the development of a robust and user-friendly system for streamlining attendance monitoring and communication within the school.
+        </p>
+        
+  <div className="flex items-center mt-4 space-x-6">
+          <a href="https://github.com/rens20/rps-financial.git" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+            <FaGithub size={24} />
+              {/* <span className="hidden md:inline">GitHub</span> */}
+          </a>
+          <a href="https://maria-ai-two.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+            <FaExternalLinkAlt size={24} />
+            {/* <span className="hidden md:inline">View</span> */}
+          </a>
+        </div>
+      </div>
+    </div>
 
 <div className="border rounded overflow-hidden">
       <a href="" target="_blank" rel="noopener noreferrer">
@@ -62,6 +125,38 @@ The Dental Clinic Appointment Management System is an innovative solution design
         </h4>
         <p className="text-gray-700">
          "RPJ Insured Auto" is likely an insurance agency specializing in automobile insurance. For the webpage, you can incorporate PHP and MySQL for backend functionality like user authentication, data storage, and processing insurance-related information. Tailwind CSS can be used for front-end design to create a modern and responsive user interface. This combination will allow you to build a dynamic and visually appealing website for "RPJ Insured Auto."
+        </p>
+        
+  <div className="flex items-center mt-4 space-x-6">
+          <a href="https://github.com/rens20/rps-financial.git" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+            <FaGithub size={24} />
+              {/* <span className="hidden md:inline">GitHub</span> */}
+          </a>
+          <a href="https://maria-ai-two.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+            <FaExternalLinkAlt size={24} />
+            {/* <span className="hidden md:inline">View</span> */}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+<div className="border rounded overflow-hidden">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img
+          src={pineapple}
+          alt="Blog Post 1"
+          className="w-full h-auto object-cover cursor-pointer"
+        />
+      </a>
+      <div className="p-4">
+        <h4 className="text-xl font-bold mb-2">
+          <a href="https://maria-ai-two.vercel.app/" className="text-slate-950 bg-clip-text">RJ Pineapple Farm</a>
+        </h4>
+        <p className="text-gray-700">
+        "RJ Pineapple" is an e-commerce thesis project for a pineapple farm. The website allows users to communicate directly with the admin via a chat feature, track and monitor their orders, and access other e-commerce functionalities. On the admin side, the system provides complete control, including user management, order monitoring, and access to detailed analytics. The admin dashboard also includes visualized graphs to monitor gross revenue and other key metrics. 
+
+The project can utilize PHP and MySQL for backend functionality, such as user authentication, real-time chat management, order processing, and revenue calculations. Tailwind CSS can be implemented to design a responsive and user-friendly interface for both the user and admin panels. This setup ensures a dynamic and efficient platform tailored to the needs of the farm's e-commerce operations.
         </p>
         
   <div className="flex items-center mt-4 space-x-6">
