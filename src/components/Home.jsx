@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Background from '../assets/Home-bg.jpg';
 
 const Home = () => {
+  //  
+
    const texts = [' Fullstack Developer', ' Software Engineer'];
   const [displayedText, setDisplayedText] = useState('');
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -15,7 +17,7 @@ const Home = () => {
         setDisplayedText(prev => prev + text[index]);
         typingTimer = setTimeout(() => typeText(text, index + 1), 100);
       } else {
-        delayTimer = setTimeout(() => deleteText(text), 2000);
+        delayTimer = setTimeout(() => deleteText(text), 200)
       }
     };
 
@@ -51,7 +53,7 @@ const Home = () => {
       <div className="content text-center flex items-center justify-between z-10 relative" style={{ top: '-100px' }}>
        <div className="text-left pr-8 top-5 relative z-1">
   <h4 className="name font-bold text-gray-200 ">Hi, I'm</h4>
-  <h2 className="name text-4xl font-bold text-white bg-clip-text sm:text-4xl text-2xl">Rens Belga Acuña</h2>
+  <h2 className="name text-4xl font-bold text-white bg-clip-text sm:text-4xl text-2xl">Rens Acuña</h2>
 <h2 className="name text-4xl font-bold bg-clip-text text-white sm:text-4xl">Aspiring 
     {displayedText}
     </h2>
