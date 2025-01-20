@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Project";
+import backgroundImage from './assets/Home-bg.jpg'
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,6 +16,15 @@ function App() {
   return (
     <>
       <Header />
+      <div
+        id="home"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
       <div id="home">
         <Home />
       </div>

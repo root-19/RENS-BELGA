@@ -9,20 +9,20 @@ const Header = () => {
   };
 
   return (
-    <header className="nav p-4 fixed w-full top-0 z-10 bg-gray-800">
+<header className="nav p-4 fixed w-full top-0 z-10 bg-transparent">
       <nav className="container mx-auto flex items-center justify-between">
         <div>
-          <a href="#" className="text-white text-xl font-bold">
-            <span className='text-indigo-500 '>&lt;Wasie /&gt;</span>
+          <a href="#" className="text-white text-xl font-bold pointer">
+            <span className='text-WHITE'>&lt;Wasie /&gt;</span>
           </a>
         </div>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 text-white">
           <Link
             to="home"
             spy={true}
             smooth={true}
             duration={500}
-            className="text-indigo-500 font-bold cursor-pointer "
+            className=" font-bold cursor-pointer text-white "
           >
             Home
           </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-indigo-500 font-bold cursor-pointer"
+            className=" font-bold cursor-pointer text-white"
           >
             About Me
           </Link>
@@ -40,21 +40,19 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-indigo-500 font-bold cursor-pointer "
+            className="text-white font-bold cursor-pointer "
           >
             Projects
-          </Link>
-          {/* <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="text-white font-bold cursor-pointer hover:underline"
+            </Link>
+          {/* Add the "Download My CV" Button */}
+          <a
+            href="/path-to-your-cv.pdf"  // Replace with the actual path to your CV
+            download="My_CV"
+            className="text-white font-bold cursor-pointe  px-4 rounded-md hover:bg-white hover:text-black"
           >
-            Contact
-          </Link> */}
+         Download vc
+          </a>
         </div>
-
         <div className="md:hidden">
           <button
             className="text-white"
@@ -109,16 +107,17 @@ const Header = () => {
               >
                 Projects
               </Link>
-              {/* <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-white block mb-2 text-2xl cursor-pointer hover:underline"
+     
+              {/* Add the "Download My CV" Button in the mobile menu */}
+              <a
+                href="/path-to-your-cv.pdf"  // Replace with the actual path to your CV
+                download="My_CV"
+                className="text-indigo-500 block mb-2 text-2xl cursor-pointer"
                 onClick={toggleMenu}
               >
-                Contact
-              </Link> */}
+               Download vc
+              </a>
+    
             </div>
           )}
         </div>
