@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe";
 // import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Experience from "./components/Experience";
 import Projects from "./components/Project";
 import backgroundImage from './assets/Home-bg.jpg'
 
@@ -27,6 +28,9 @@ function App() {
       ></div>
       <div id="home">
         <Home />
+      </div>
+      <div id="experience">
+        <Experience />
       </div>
       <div id="about">
         <AboutMe />

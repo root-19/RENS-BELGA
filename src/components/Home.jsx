@@ -1,74 +1,104 @@
-import { useState, useEffect } from 'react';
-import Background from '../assets/Home-bg.jpg';
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 const Home = () => {
-  //  
-
-   const texts = [' Fullstack Developer', ' Software Engineer'];
-  const [displayedText, setDisplayedText] = useState('');
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  
-  useEffect(() => {
-    let typingTimer;
-    let deletingTimer;
-    let delayTimer;
-    const typeText = (text, index = 0) => {
-      if (index < text.length) {
-        setDisplayedText(prev => prev + text[index]);
-        typingTimer = setTimeout(() => typeText(text, index + 1), 100);
-      } else {
-        delayTimer = setTimeout(() => deleteText(text), 200)
-      }
-    };
-
-    const deleteText = (text) => {
-      if (text.length > 0) {
-        setDisplayedText(text.slice(0, -1));
-        deletingTimer = setTimeout(() => deleteText(text.slice(0, -1)), 100);
-      } else {
-        const nextTextIndex = (currentTextIndex + 1) % texts.length;
-        setCurrentTextIndex(nextTextIndex);
-        typeText(texts[nextTextIndex]);
-      }
-    };
-
-    typeText(texts[currentTextIndex]);
-
-    return () => {
-      clearTimeout(typingTimer);
-      clearTimeout(deletingTimer);
-      clearTimeout(delayTimer);
-    };
-  }, [currentTextIndex]);
   return (
-    <div
-    className="wave-container  flex flex-col items-center justify-center relative overflow-hidden"
-    style={{
-      backgroundImage:  `url(${Background})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    }}
-  >
-      <div className="content text-center flex items-center justify-between z-10 relative" style={{ top: '-100px' }}>
-       <div className="text-left pr-8 top-5 relative z-1">
-  <h4 className="name font-bold text-gray-200 ">Hi, I'm</h4>
-  <h2 className="name text-4xl font-bold text-white bg-clip-text sm:text-4xl text-2xl">Rens Acuña</h2>
-<h2 className="name text-4xl font-bold bg-clip-text text-white sm:text-4xl">Aspiring 
-    {displayedText}
-    </h2>
+    <div name="home" className="h-screen w-full bg-gray-900">
+      <div className="section-container h-full flex flex-col justify-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-3xl"
+        >
+          <motion.p 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-blue-500 font-bold text-lg mb-2"
+          >
+            Hi, my name is
+          </motion.p>
+          <motion.h1 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-5xl sm:text-7xl font-bold text-white mb-4"
+          >
+            Rens Acuña
+          </motion.h1>
+          <motion.h2 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="text-4xl sm:text-6xl font-bold text-gray-400 mb-6"
+          >
+            Full Stack Developer
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="paragraph max-w-2xl mb-8"
+          >
+            I'm a passionate full-stack developer specializing in building exceptional digital experiences.
+            My focus is on creating responsive and user-friendly web applications
+            that solve real-world problems.
+          </motion.p>
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            className="flex gap-4 mb-8"
+          >
+            <Link
+              to="project"
+              smooth
+              duration={500}
+              className="button-primary flex items-center gap-2"
+            >
+              View Work
+              <HiArrowNarrowRight className="ml-2" />
+            </Link>
+            
+            <a
+              href="/path-to-your-cv.pdf"
+              download="Rens_Belga_CV"
+              className="button-secondary"
+            >
+              Download CV
+            </a>
+          </motion.div>
 
-          <div className="flex items-center mt-4">
-    <div className="flex items-center justify-center">
-      <a href="mailto:wasieacuna@email.com" className="bg-slate-950 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded">Send Message</a>
-    
-    </div>
-
-
-          </div>
-
-        </div>
-       
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            className="flex gap-4"
+          >
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon"
+            >
+              <FaGithub size={30} />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon"
+            >
+              <FaLinkedin size={30} />
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

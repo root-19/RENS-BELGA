@@ -1,127 +1,95 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Header = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [nav, setNav] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+  const links = [
+    {
+      id: 1,
+      link: 'home',
+      label: 'Home'
+    },
+    {
+      id: 2,
+      link: 'experience',
+      label: 'Experience'
+    },
+    {
+      id: 3,
+      link: 'about',
+      label: 'About'
+    },
+    {
+      id: 4,
+      link: 'project',
+      label: 'Projects'
+    },
+    {
+      id: 5,
+      link: 'contact',
+      label: 'Contact'
+    }
+  ];
 
   return (
-<header className="nav p-4 fixed w-full top-0 z-10 bg-transparent">
-      <nav className="container mx-auto flex items-center justify-between">
+    <header className="fixed w-full h-20 bg-gray-900/95 backdrop-blur-sm text-white z-50 border-b border-gray-800">
+      <div className="flex justify-between items-center h-full max-w-7xl mx-auto px-4 sm:px-6">
         <div>
-          <a href="#" className="text-white text-xl font-bold pointer">
-            <span className='text-WHITE'>&lt;Wasie /&gt;</span>
-          </a>
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent">
+            RENS
+          </h1>
         </div>
-        <div className="hidden md:flex space-x-4 text-white">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" font-bold cursor-pointer text-white "
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" font-bold cursor-pointer text-white"
-          >
-            About Me
-          </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="text-white font-bold cursor-pointer "
-          >
-            Projects
-            </Link>
-          {/* Add the "Download My CV" Button */}
-          <a
-            href="/path-to-your-cv.pdf"  // Replace with the actual path to your CV
-            download="My_CV"
-            className="text-white font-bold cursor-pointe  px-4 rounded-md hover:bg-white hover:text-black"
-          >
-         Download vc
-          </a>
+
+        <nav className="hidden md:flex">
+          <ul className="flex space-x-8">
+            {links.map(({ id, link, label }) => (
+              <li key={id} className="nav-link">
+                <Link
+                  to={link}
+                  smooth
+                  duration={500}
+                  className="cursor-pointer hover:text-blue-400 transition-colors duration-300"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer md:hidden text-gray-300 hover:text-blue-400 transition-colors duration-300"
+        >
+          {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
         </div>
-        <div className="md:hidden">
-          <button
-            className="text-white"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-          {/* Show the menu if it's open */}
-          {isMenuOpen && (
-            <div className="header absolute top-17 right-0 text-center font-bold hover:text-underline text-2xl p-9 py-10 px-10 cursor-pointer h-screen w-full flex flex-col justify-center bg-gray-800">
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-indigo-500 block mb-2 text-2xl cursor-pointer "
-                onClick={toggleMenu}
+      </div>
+
+      {/* Mobile Menu */}
+      {nav && (
+        <div className="fixed top-20 left-0 w-full h-screen bg-gray-900/95 backdrop-blur-sm md:hidden">
+          <ul className="flex flex-col items-center justify-start pt-8 space-y-8">
+            {links.map(({ id, link, label }) => (
+              <li
+                key={id}
+                className="text-xl font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
               >
-                Home
-              </Link>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-indigo-500  block mb-2 text-2xl cursor-pointer "
-                onClick={toggleMenu}
-              >
-                About Me
-              </Link>
-              <Link
-                to="projects"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-indigo-500 block mb-2 text-2xl cursor-pointer "
-                onClick={toggleMenu}
-              >
-                Projects
-              </Link>
-     
-              {/* Add the "Download My CV" Button in the mobile menu */}
-              <a
-                href="/path-to-your-cv.pdf"  // Replace with the actual path to your CV
-                download="My_CV"
-                className="text-indigo-500 block mb-2 text-2xl cursor-pointer"
-                onClick={toggleMenu}
-              >
-               Download vc
-              </a>
-    
-            </div>
-          )}
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={link}
+                  smooth
+                  duration={500}
+                  className="cursor-pointer"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </nav>
+      )}
     </header>
   );
 };

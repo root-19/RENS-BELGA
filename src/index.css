@@ -2,18 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-blue: #1e3a8a;
+  --secondary-blue: #3b82f6;
+  --accent-blue: #60a5fa;
+  --dark-bg: #111827;
+  --light-text: #f3f4f6;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+}
+
+.heading-primary {
+  @apply text-4xl sm:text-5xl font-bold text-blue-500 mb-6;
+}
+
+.heading-secondary {
+  @apply text-3xl sm:text-4xl font-semibold text-white mb-4;
+}
+
+.paragraph {
+  @apply text-lg text-gray-300 leading-relaxed;
+}
+
+.button-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg 
+         transition duration-300 ease-in-out transform hover:scale-105 shadow-lg;
+}
+
+.button-secondary {
+  @apply bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg
+         border border-blue-500 transition duration-300 ease-in-out transform hover:scale-105;
+}
+
+.card {
+  @apply bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700 
+         hover:border-blue-500 transition duration-300;
+}
+
+.nav-link {
+  @apply text-gray-300 hover:text-blue-400 transition duration-200 text-lg font-medium;
+}
+
+.icon {
+  @apply text-blue-500 hover:text-blue-400 transition duration-200;
+}
+
+/* Animation classes */
+.fade-in {
+  @apply opacity-0 animate-[fadeIn_1s_ease-in_forwards];
+}
+
+.slide-up {
+  @apply transform translate-y-10 opacity-0 animate-[slideUp_0.5s_ease-out_forwards];
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
-
-
 
 .nav {
   background: linear-gradient(90deg,#020617,#020617,#020617)
 }
 .header{
   background: linear-gradient(90deg, #020617, #020617, #020617)
-
 }
 @keyframes wave {
   0% {
@@ -103,7 +181,6 @@ html {
   padding: 20px;
 }
 
-
 @keyframes slide {
   0% {
     transform: translateX(-100%);
@@ -116,3 +193,4 @@ html {
 .animate-slide {
   animation: slide 20s linear infinite;
 }
+

@@ -1,94 +1,126 @@
+import React from 'react';
+import { FaCode, FaServer, FaMobile, FaDatabase } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import Me from "../assets/Me.jpg";
 import Background from '../assets/Home-bg.jpg';
+
 const AboutMe = () => {
+  const skills = [
+    {
+      id: 1,
+      icon: <FaCode size={40} />,
+      title: 'Frontend Development',
+      description: 'Experienced in React.js, Next.js, and modern CSS frameworks like Tailwind CSS.',
+    },
+    {
+      id: 2,
+      icon: <FaServer size={40} />,
+      title: 'Backend Development',
+      description: 'Proficient in Node.js, Express, and RESTful API development.',
+    },
+    {
+      id: 3,
+      icon: <FaMobile size={40} />,
+      title: 'Responsive Design',
+      description: 'Creating mobile-first, responsive web applications that work across all devices.',
+    },
+    {
+      id: 4,
+      icon: <FaDatabase size={40} />,
+      title: 'Database Management',
+      description: 'Working with SQL and NoSQL databases including MongoDB and PostgreSQL.',
+    },
+  ];
+
+  const technicalSkills = [
+    'JavaScript',
+    'React',
+    'Node.js',
+    'Python',
+    'MongoDB',
+    'PostgreSQL',
+    'Git',
+    'Docker',
+    'AWS',
+    'TypeScript',
+  ];
+
   return (
-    <div 
-    style={{
-          backgroundImage:  `url(${Background})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}>
-   
+    <div name="about" className="w-full py-20 bg-gray-900">
+      <div className="section-container">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
+          <h2 className="heading-primary">About Me</h2>
+          <p className="paragraph">
+            I am a dedicated full-stack developer with a passion for creating elegant solutions
+            to complex problems. With a strong foundation in both frontend and backend technologies,
+            I strive to build scalable and maintainable applications that provide exceptional user experiences.
+          </p>
+        </motion.div>
 
-      <div className="lg:w-3/2 p-4">
-        <p className="text-2xl font-bold  p-2 text-indigo-500 bg-clip-text mt-4">
-          About Me
-         
-        </p>
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start">
-          <img
-            src={Me}
-            alt="profile"
-            className="max-w-xs h-auto rounded-lg mb-4 lg:mr-4 lg:mb-0"
-          />
-          <div className="text-left">
-            <p className="mb-2 text-white font-bold text-2xl">
-            My name is <span className="text-indigo-500 font-bold">Rens Belga Acuña</span>,I'm a passionate Full Stack Web Developer who thrives on innovation, problem-solving, and creating impactful applications. With a focus on both front-end and back-end development, I aim to deliver user-centric, scalable, and seamless experiences. Driven by curiosity and continuous learning, I embrace every opportunity to explore new technologies and expand my skills. For me, web development is not just a career, but a fulfilling journey of blending creativity with technical expertise, making meaningful contributions, and pushing the boundaries of what's possible.
-            </p>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12"
+        >
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+              viewport={{ once: true }}
+              className="card group"
+            >
+              <div className="flex items-center mb-4">
+                <motion.div 
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
+                  viewport={{ once: true }}
+                  className="text-blue-500 mr-4 group-hover:text-blue-400 transition-colors duration-300"
+                >
+                  {skill.icon}
+                </motion.div>
+                <h3 className="text-xl font-semibold text-white">{skill.title}</h3>
+              </div>
+              <p className="text-gray-400">{skill.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <h3 className="heading-secondary mb-8">Technical Skills</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {technicalSkills.map((skill, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 + 0.7 }}
+                viewport={{ once: true }}
+                className="px-4 py-2 bg-gray-800 text-blue-400 rounded-full text-sm font-medium
+                         border border-gray-700 hover:border-blue-500 transition duration-300"
+              >
+                {skill}
+              </motion.span>
+            ))}
           </div>
-        </div>
-
-
-
-        <div className="flex flex-col mt-4 lg:flex-row text-white font-bold">
-  <div className="lg:w-1/2">
-    <h2 className="text-2xl font-bold text-indigo-500 p-2  bg-clip-text">
-      Experience
-    </h2>
-    <div className="ml-6">
-      <p>I have hands-on experience in web development, covering both frontend and backend aspects. Throughout my career, I've successfully completed various projects, demonstrating versatility in designing captivating user interfaces and implementing complex server functionalities.
-
-Using modern tools and frameworks, I've tackled challenges in creating dynamic and visually appealing web applications. Additionally, I've worked on full-stack projects and served in roles similar to a capstone project. As a student commissioner, I've also overseen programming tasks, further honing my skills in the field.</p>
-    </div>
-  </div>
-
-  <div className="lg:w-1/2 mt-4 lg:mt-0 lg:ml-6 text-indigo-500 ">
-    <h2 className="text-2xl font-bold  p-2  bg-clip-text">
-      Education
-    </h2>
-    
-    <div className="ml-6">
-      <div className="mb-4 text-white">
-        <h2 className="text-lg font-semibold text-white">Elementary</h2>
-        <p>Studied grades 1-6 at Rizza Elementary School</p>
+        </motion.div>
       </div>
-      <div className="mb-4 text-white">
-        <h2 className="text-lg font-semibold text-white">High School</h2>
-        <p>Studied grades 7-10 at Rizza National High School</p>
-      </div>
-       <div className="mb-4 text-white">
-        <h2 className="text-lg font-semibold tex-slate-950 bg-clip-text">Senior High School</h2>
-        <p>Studied senior high at  Gateways Institute of Science and Technology</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      </div>
-      <div>
-      <h2 className="text-2xl font-bold text-indigo-500 p-2 ml-6 bg-clip-text">
-      Technologies
-    </h2>
-    <div className="flex flex-wrap justify-center gap-20">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" className="w-20 h-20 " />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" className="w-20 h-20" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" className="w-20 h-20" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="w-20 h-20" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" className="w-20 h-20" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" className="w-20 h-20"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" className="w-20 h-20"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" className="w-20 h-20"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" className="w-20 h-20" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" className="w-20 h-20"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" className="w-20 h-20 "/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg"className="w-20 h-20" />
-
-
-    </div>
-</div>
-
     </div>
   );
 };
