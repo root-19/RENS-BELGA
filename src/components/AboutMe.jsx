@@ -16,7 +16,7 @@ const AboutMe = () => {
       id: 2,
       icon: <FaServer size={40} />,
       title: 'Backend Development',
-      description: 'Proficient in Node.js, Express, and RESTful API development.',
+      description: 'Proficient in Node.js, Express,Laravel and RESTful API development.',
     },
     {
       id: 3,
@@ -36,13 +36,17 @@ const AboutMe = () => {
     'JavaScript',
     'React',
     'Node.js',
-    'Python',
     'MongoDB',
     'PostgreSQL',
+    'MySQL',
     'Git',
     'Docker',
     'AWS',
     'TypeScript',
+    'PHP',
+    'Laravel',
+    'tailwind.css',
+    'Github',
   ];
 
   return (
@@ -103,7 +107,7 @@ const AboutMe = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="heading-secondary mb-8">Technical Skills</h3>
+          <h3 className="heading-primary mb-8">TechStack</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {technicalSkills.map((skill, index) => (
               <motion.span
@@ -112,7 +116,7 @@ const AboutMe = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.1 + 0.7 }}
                 viewport={{ once: true }}
-                className="px-4 py-2 bg-gray-800 text-blue-400 rounded-full text-sm font-medium
+                className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium
                          border border-gray-700 hover:border-blue-500 transition duration-300"
               >
                 {skill}
