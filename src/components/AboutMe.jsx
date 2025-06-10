@@ -47,6 +47,9 @@ const AboutMe = () => {
     'Laravel',
     'tailwind.css',
     'Github',
+    'react native',
+    'firebase',
+    'supabase',
   ];
 
   return (

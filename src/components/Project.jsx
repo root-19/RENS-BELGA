@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  FaGithub,
-  FaExternalLinkAlt,
   FaShoppingCart,
   FaTooth,
   FaQrcode,
@@ -32,8 +30,6 @@ const Projects = () => {
       description: "The HP Performance Exhaust E-commerce System is a capstone project designed to provide an efficient and user-friendly platform for managing and selling performance exhaust products. Built using PHP, Bootstrap, MySQLi, and AI, the system offers seamless functionality for both clients and administrators.",
       image: ecommer,
       icon: <FaShoppingCart className="text-blue-400" size={24} />,
-      github: "",
-      live: "https://maria-ai-two.vercel.app/",
       tags: ["PHP", "Bootstrap", "MySQL", "AI"]
     },
     {
@@ -42,8 +38,6 @@ const Projects = () => {
       description: "The Dental Clinic Appointment Management System is an innovative solution designed to streamline the process of setting and managing appointments. This system is built using PHP, Bootstrap, MySQLi, and AI, providing a seamless experience for both users and administrators.",
       image: Dental,
       icon: <FaTooth className="text-blue-400" size={24} />,
-      github: "",
-      live: "https://maria-ai-two.vercel.app/",
       tags: ["PHP", "Bootstrap", "MySQL", "Appointments"]
     },
     {
@@ -52,8 +46,6 @@ const Projects = () => {
       description: "A QR code-based attendance monitoring system for efficient student tracking. Features real-time email notifications, user authentication, and comprehensive attendance data management. Built with PHP, MySQL, and Tailwind CSS.",
       image: capstone,
       icon: <FaQrcode className="text-blue-400" size={24} />,
-      github: "https://github.com/rens20/rps-financial.git",
-      live: "https://maria-ai-two.vercel.app/",
       tags: ["PHP", "MySQL", "Tailwind", "QR Code"]
     },
     {
@@ -62,8 +54,6 @@ const Projects = () => {
       description: "An insurance agency platform specializing in automobile insurance. Features user authentication, insurance processing, and a modern responsive interface built with PHP, MySQL, and Tailwind CSS.",
       image: Auto,
       icon: <FaCar className="text-blue-400" size={24} />,
-      github: "https://github.com/rens20/rps-financial.git",
-      live: "https://maria-ai-two.vercel.app/",
       tags: ["PHP", "MySQL", "Tailwind", "Insurance"]
     },
     {
@@ -72,8 +62,6 @@ const Projects = () => {
       description: "An e-commerce platform for a pineapple farm featuring real-time chat, order tracking, and admin analytics. Includes visualized revenue graphs and comprehensive order management.",
       image: pineapple,
       icon: <FaSeedling className="text-blue-400" size={24} />,
-      github: "https://github.com/rens20/rps-financial.git",
-      live: "https://maria-ai-two.vercel.app/",
       tags: ["PHP", "MySQL", "E-commerce", "Analytics"]
     },
     {
@@ -82,8 +70,6 @@ const Projects = () => {
       description: "A comprehensive Sari-Sari Store inventory management solution built with PHP, MySQL, Tailwind CSS, HTML, and AJAX for efficient product stock handling.",
       image: Inventory,
       icon: <FaBoxes className="text-blue-400" size={24} />,
-      github: "https://github.com/rens20/inventory-management.git",
-      live: "",
       tags: ["PHP", "MySQL", "Tailwind", "AJAX"]
     }
   ];
@@ -110,7 +96,7 @@ const Projects = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto"
         >
           {projects.map((project, index) => (
             <motion.div
@@ -119,24 +105,24 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
               viewport={{ once: true }}
-              className="card group hover:transform hover:scale-105 transition-all duration-300"
+              className="card group hover:transform hover:scale-105 transition-all duration-300 bg-gray-800 rounded-xl overflow-hidden shadow-xl"
             >
               <motion.div 
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
                 viewport={{ once: true }}
-                className="relative overflow-hidden rounded-t-xl h-48"
+                className="relative overflow-hidden h-56"
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-contain bg-gray-800 transform group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300" />
               </motion.div>
 
-              <div className="p-6">
+              <div className="p-8">
                 <motion.div 
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -145,7 +131,7 @@ const Projects = () => {
                   className="flex items-center gap-3 mb-4"
                 >
                   {project.icon}
-                  <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                  <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                 </motion.div>
 
                 <motion.p 
@@ -153,12 +139,12 @@ const Projects = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 + 0.6 }}
                   viewport={{ once: true }}
-                  className="text-gray-400 mb-4 line-clamp-3"
+                  className="text-gray-300 mb-6 line-clamp-3 text-lg"
                 >
                   {project.description}
                 </motion.p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <motion.span
                       key={tagIndex}
@@ -166,42 +152,13 @@ const Projects = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: index * 0.1 + tagIndex * 0.1 + 0.7 }}
                       viewport={{ once: true }}
-                      className="px-3 py-1 bg-gray-800 text-blue-400 text-sm rounded-full
-                               border border-gray-700 hover:border-blue-500 transition-colors duration-300"
+                      className="px-4 py-2 bg-blue-500/10 text-blue-400 text-sm rounded-full
+                               border border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
                     >
                       {tag}
                     </motion.span>
                   ))}
                 </div>
-
-                <motion.div 
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 + 0.8 }}
-                  viewport={{ once: true }}
-                  className="flex items-center gap-4"
-                >
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="icon-link group"
-                    >
-                      <FaGithub size={20} className="text-gray-400 group-hover:text-blue-400 transition-colors" />
-                    </a>
-                  )}
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="icon-link group"
-                    >
-                      <FaExternalLinkAlt size={20} className="text-gray-400 group-hover:text-blue-400 transition-colors" />
-                    </a>
-                  )}
-                </motion.div>
               </div>
             </motion.div>
           ))}

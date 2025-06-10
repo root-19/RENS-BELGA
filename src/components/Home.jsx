@@ -67,7 +67,7 @@ const Home = () => {
             </Link>
             
             <a
-              href="/path-to-your-cv.pdf"
+              href="/src/assets/rens-resume.pdf"
               download="Rens_Belga_CV"
               className="button-secondary"
             >
@@ -82,7 +82,7 @@ const Home = () => {
             className="flex gap-4"
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/root-19"
               target="_blank"
               rel="noopener noreferrer"
               className="icon"
