@@ -21,6 +21,14 @@ import Dental from "../assets/Dental.png";
 import pineapple from "../assets/pineapple.jpg";
 import capstone from "../assets/capstone12.png";
 import ecommer from "../assets/ecomer-2.png";
+import framework  from "../assets/framework.jpg";
+import Food from "../assets/food-ordering.jpg";
+import jsut10 from "../assets/just10minute.jpg";
+import learn from "../assets/learnInsure.jpg";
+import lost from "../assets/loast and found.jpg";
+import gradlink from "../assets/gradlink.jpg";
+import ai from "../assets/ai-ama.jpg";
+import scheduling from "../assets/scheduling-ssytem.jpg";
 
 const Projects = () => {
   const projects = [
@@ -71,6 +79,70 @@ const Projects = () => {
       image: Inventory,
       icon: <FaBoxes className="text-blue-400" size={24} />,
       tags: ["PHP", "MySQL", "Tailwind", "AJAX"]
+    },
+    {
+      id: 7,
+      title: "Food Ordering and Delivery System",
+      description: "A full-stack food ordering platform with menu browsing, cart, checkout, and order tracking built using PHP (Laravel), Tailwind CSS, JavaScript, and SQL.",
+      image: Food,
+      icon: <FaShoppingCart className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 8,
+      title: "Framework Starter (Laravel CRUD Template)",
+      description: "A reusable Laravel-based CRUD starter with authentication, role-based access, and responsive UI using Tailwind CSS and Alpine/JavaScript backed by SQL.",
+      image: framework,
+      icon: <FaBoxes className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 9,
+      title: "Just 10 Minute",
+      description: "A productivity web app that lets users create quick 10-minute tasks/sessions with progress tracking and history, powered by Laravel, Tailwind, JavaScript, and SQL.",
+      image: jsut10,
+      icon: <FaBoxes className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 10,
+      title: "LearnInsure Platform",
+      description: "An insurance learning portal featuring courses, quizzes, and user dashboards built with Laravel, Tailwind CSS, JavaScript, and SQL.",
+      image: learn,
+      icon: <FaBoxes className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 11,
+      title: "Lost and Found System",
+      description: "A campus lost-and-found management system that lets users post, search, and claim items with admin verification using Laravel, Tailwind CSS, JavaScript, and SQL.",
+      image: lost,
+      icon: <FaQrcode className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 12,
+      title: "GradLink Alumni Portal",
+      description: "An alumni networking portal for graduates with profiles, job board, and messaging built using Laravel, Tailwind CSS, JavaScript, and SQL.",
+      image: gradlink,
+      icon: <FaBoxes className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 13,
+      title: "AI AMA Chatbot",
+      description: "An 'Ask Me Anything' chatbot interface integrated into a Laravel app with Tailwind CSS, JavaScript interactions, and SQL logging for conversations.",
+      image: ai,
+      icon: <FaBoxes className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
+    },
+    {
+      id: 14,
+      title: "Scheduling System",
+      description: "A scheduling and calendar management system with appointments, reminders, and role-based access built using Laravel, Tailwind CSS, JavaScript, and SQL.",
+      image: scheduling,
+      icon: <FaBoxes className="text-blue-400" size={24} />,
+      tags: ["PHP", "Laravel", "Tailwind CSS", "JavaScript", "SQL"]
     }
   ];
 
